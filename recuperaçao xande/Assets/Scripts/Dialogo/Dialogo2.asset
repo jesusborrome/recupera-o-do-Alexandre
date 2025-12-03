@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: Dialogo2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: CatXPT
+    texto: "Novas informa\xE7\xF5es acabaram de chegar quentinhas Capit\xE3o!"
+  - nomePersonagem: Henrique
+    texto: "SLC que neurose rapa, o que a gente pegou a\xED Cat???"
+  - nomePersonagem: CatXPT
+    texto: "Em vida, ele foi respons\xE1vel pela cria\xE7\xE3o da Escola Parque em
+      Salvador, da Universidade de Bras\xEDlia (UnB), da qual foi reitor."
+  - nomePersonagem: Henrique
+    texto: "Caraca ent\xE3o ele era dos engravatados \xE9? o cara era importante"
+  - nomePersonagem: CatXPT
+    texto: Sim, e como todo homem importante ele tinha "inimigos".
+  - nomePersonagem: Henrique
+    texto: oxi como assim??? tavam na maldade dele?
+  - nomePersonagem: CatXPT
+    texto: "Provavelmente n\xE3o tenho essa informa\xE7\xE3o agora capit\xE3o"
+  - nomePersonagem: Henrique
+    texto: "Slc rapa, tem muito caro\xE7o nesse angu a\xED ein"

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: DialogoInicio
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: ???
+    texto: ...Sistema Iniciando...
+  - nomePersonagem: Henrique
+    texto: "onde \xE9 q eu t\xF4??? pq t\xF4 ouvindo vozes na minha cabe\xE7a??"
+  - nomePersonagem: CatXPT
+    texto: "Boa noite! Voc\xEA acabou caindo no sono e agora est\xE1 no \"void\"."
+  - nomePersonagem: Henrique
+    texto: "void? nunca ouvi falar, onde q \xE9 isso?"
+  - nomePersonagem: CatXPT
+    texto: "Voc\xEA est\xE1 no espa\xE7o dos sonhos onde as suas distra\xE7\xF5es
+      se tornaram inimigos perigosos."
+  - nomePersonagem: CatXPT
+    texto: "Para prosseguir voc\xEA deve acabar com ondas de inimigos enquanto aprende
+      conhecimentos valiosos sobre o An\xEDsio Teixeira para a sua prova!"
+  - nomePersonagem: Henrique
+    texto: "eu tenho q estudar at\xE9 nos meus sonhos? meu Deus!"
+  - nomePersonagem: Henrique
+    texto: e esses "inimigos"? vai ser tipo um spaceshooter?
+  - nomePersonagem: CatXPT
+    texto: "Exatamente! Voc\xEA parece gostar de jogos nesse estilo, ent\xE3o tenho
+      certeza que n\xE3o ser\xE1 de grande dificuldade."
+  - nomePersonagem: Henrique
+    texto: "t\xE1 bom ent\xE3o n\xE9, quando isso come\xE7a?"
+  - nomePersonagem: CatXPT
+    texto: "Quando nossa conversa terminar voc\xEA poder\xE1 come\xE7ar a sua jornada!
+      Te guiarei com as coisas que precisar, est\xE1 pronto?"

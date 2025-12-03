@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: Dialogo4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: CatXPT
+    texto: "O mist\xE9rio foi desvendado Capit\xE3o!!!"
+    IdPersonagem: 0
+  - nomePersonagem: Henrique
+    texto: "slc par\xE7a o que aconteceu? o que a gente descobriu?"
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "An\xEDsio Teixeira foi procurado ap\xF3s o golpe militar de 1964, suas
+      fun\xE7\xF5es na Universidade de Bras\xEDlia foram encerradas."
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "Ele retornou ao Brasil em 1966, mas continuou a ser alvo de persegui\xE7\xE3o."
+    IdPersonagem: 0
+  - nomePersonagem: Henrique
+    texto: "oloko par\xE7a, mas porque os federal queria o An\xEDsio???"
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "\xC9 simples Capit\xE3o, An\xEDsio era um homem inteligente que queria
+      mudar as coisas, o estudo e a sensatez fazem as pessoas pensarem e isso irritava
+      profundamente o governo."
+    IdPersonagem: 0
+  - nomePersonagem: Henrique
+    texto: "t\xF4 ligado agora, mas e a\xED? o que rolou depois?"
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "Foi encontrado morto em 11 de mar\xE7o de 1971, no Rio de Janeiro, em
+      circunst\xE2ncias consideradas \"misteriosas\"."
+    IdPersonagem: 0
+  - nomePersonagem: Henrique
+    texto: OXI?!?!??! Como assim? O que rolou? Pipocaram ele?
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "Os documentos da \xE9poca dizem terem encontrado An\xEDsio no fosso de
+      um elevador, muitos dizem que o governo fez isso, mas nada foi comprovado."
+    IdPersonagem: 0
+  - nomePersonagem: CatXPT
+    texto: "O rapaz nao merecia isso a\xED n\xE3o truta...."
+    IdPersonagem: 0

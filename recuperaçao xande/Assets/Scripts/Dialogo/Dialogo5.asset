@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: Dialogo5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: CatXPT
+    texto: "Acho que \xE9 isso Capit\xE3o, temos quase todas as informa\xE7\xF5es
+      necess\xE1rias, falta s\xF3 mais um pouco para a carga estar completa e voc\xEA
+      poder sair daqui."
+  - nomePersonagem: Henrique
+    texto: Pode deixar Cat.

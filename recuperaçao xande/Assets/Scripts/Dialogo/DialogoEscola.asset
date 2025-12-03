@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: DialogoEscola
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: Henrique
+    texto: "t\xF4 ferrado, preciso gabaritar a prova pra passar nesse trimestre"
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "Sim, voc\xEA est\xE1 por um fio! Espero que estude bastante para a pr\xF3xima
+      avalia\xE7\xE3o. "
+  - nomePersonagem: Henrique
+    texto: "co\xE9 prof, nem sei o que vai cair na prova, resume um pouco a\xED"
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "... Se voc\xEA parasse de dormir durante as aulas saberia que temos estudado
+      bastante o trabalho de \"An\xEDsio Teixeira\" e sua import\xE2ncia para o Brasil."
+  - nomePersonagem: Henrique
+    texto: "Ant\xF4nio Peixeira?"
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: ...
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "J\xE1 est\xE1 quase acabando a minha aula, n\xE3o tenho tempo para te
+      explicar agora, espero que estude bastante esta noite, a prova n\xE3o vai estar
+      f\xE1cil!"
+  - nomePersonagem: Henrique
+    texto: vou ver e te aviso prof

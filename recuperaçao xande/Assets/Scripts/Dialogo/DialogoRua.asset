@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: DialogoRua
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  falas:
+  - nomePersonagem: Henrique
+    texto: "acho q eu me garanto na f\xE9 e na intelig\xEAncia, n\xE3o preciso estudar"
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Ei guri! Voc\xEA consegue me ajudar em um neg\xF3cio rapid\xE3o?"
+  - nomePersonagem: Henrique
+    texto: "pior que n\xE3o, tenho que estudar sobre um tal de \"Arnaldo Pereira\"
+      pra uma prova de hist\xF3ria"
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Voc\xEA quis dizer An\xEDsio Teixeira? Eu estudei bastante sobre ele
+      quando eu tinha sua idade."
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Voc\xEA quer a biografia dele? Eu tenho guardado l\xE1 em casa, se quiser
+      eu te empresto."
+  - nomePersonagem: Henrique
+    texto: eu aceito, vai ajudar bastante
+  - nomePersonagem: 
+    texto: (Alguns minutos depois...)
+  - nomePersonagem: "Tio Z\xE9"
+    texto: Aqui, ainda bem que moro perto, quero o livro de volta no fim dessa semana,
+      boa sorte na prova!
+  - nomePersonagem: Henrique
+    texto: "valeu Z\xE9, v\xF4 pra casa agora, flw!"
