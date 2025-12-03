@@ -49,10 +49,15 @@ public class Playermove : MonoBehaviour
 
     public void MovimentarJogador()
     {
-        TeclasApertadas = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        body.linearVelocity = TeclasApertadas.normalized * velocidadeDaNave;
+        float horizontal = Input.GetAxisRaw("Horizontal");
+
+        // Movimento apenas para os lados
+        Vector2 movimento = new Vector2(horizontal, 0f);
+
+        body.linearVelocity = movimento.normalized * velocidadeDaNave;
     }
-    
+
+
     public void AtirarlazerDoPlayer()
     {
         if (Input.GetButtonDown("Fire1"))

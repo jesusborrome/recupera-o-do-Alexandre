@@ -16,7 +16,7 @@ public class GeradorDeObjetos : MonoBehaviour
 
     void Update()
     {
-        if (!PodeSpawnar) return; 
+        if (!PodeSpawnar) return;
 
         TempoAtualDosSpwans -= Time.deltaTime;
 
@@ -25,20 +25,22 @@ public class GeradorDeObjetos : MonoBehaviour
             SpawnarObjeto();
         }
     }
-
     private void SpawnarObjeto()
     {
         int ObjetoAleatorio = Random.Range(0, objetosParaSpawnar.Length);
         int pontoAleatorio = Random.Range(0, pontoDeSpawn.Length);
 
-        Instantiate(objetosParaSpawnar[ObjetoAleatorio],
+        Quaternion apontarParaBaixo = Quaternion.Euler(0f, 0f, 90f);
+
+        Instantiate(
+            objetosParaSpawnar[ObjetoAleatorio],
             pontoDeSpawn[pontoAleatorio].position,
-            Quaternion.Euler(0f, 0f, -90f));
+            apontarParaBaixo
+        );
 
         TempoAtualDosSpwans = tempoMaximoEntreOsSpwans;
     }
 
-    // NOVOS MÉTODOS:
     public void PausarSpawns()
     {
         PodeSpawnar = false;
@@ -50,4 +52,3 @@ public class GeradorDeObjetos : MonoBehaviour
         TempoAtualDosSpwans = tempoMaximoEntreOsSpwans;
     }
 }
-

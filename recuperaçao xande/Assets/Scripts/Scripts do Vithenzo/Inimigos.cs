@@ -5,7 +5,6 @@ public class Inimigos : MonoBehaviour
     public GameObject LaserDoInimigo;
 
     public Transform LocalDoDisparo;
-
     public Transform SegundoLocalDeDisparo;
 
     public GameObject ItemParaDropar;
@@ -13,42 +12,38 @@ public class Inimigos : MonoBehaviour
     public float velocidadeDoInimigo;
 
     public float tempoMaximoEntreOsLasers;
-
-    public float tempoAtualDosLasers;
+    private float tempoAtualDosLasers;
 
     public bool InimigoAtirador;
-
     public bool InimigosDeDisparoDuplo;
 
     public int VidaMaximaDoInimigo;
-
     public int VidaAtualDoInimigo;
 
     public int SaberParaDar;
 
     public int chanceParaDropar;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        // Garante que TODOS os inimigos estejam virados para baixo
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+
+        tempoAtualDosLasers = tempoMaximoEntreOsLasers;
     }
 
-    // Update is called once per frame
     void Update()
     {
         MovimentarInimigo();
 
-        if(InimigoAtirador == true )
-        {
+        if (InimigoAtirador)
             AtirarLaser();
-        }
-        
     }
 
     public void MovimentarInimigo()
     {
-        transform.Translate(Vector3.down * velocidadeDoInimigo * Time.deltaTime);
+        // Move o inimigo para baixo SEM depender da rotação dele
+        transform.Translate(Vector3.down * velocidadeDoInimigo * Time.deltaTime, Space.World);
     }
 
     private void AtirarLaser()
@@ -57,7 +52,14 @@ public class Inimigos : MonoBehaviour
 
         if (tempoAtualDosLasers <= 0)
         {
-            Instantiate(LaserDoInimigo, LocalDoDisparo.position, Quaternion.Euler(0f, 0f, 90f));
+            // Tiro apontando para baixo (0° funciona para a maioria dos sprites)
+            Quaternion rotacaoDoTiro = Quaternion.identity;
+
+            Instantiate(LaserDoInimigo, LocalDoDisparo.position, rotacaoDoTiro);
+
+            if (InimigosDeDisparoDuplo && SegundoLocalDeDisparo != null)
+                Instantiate(LaserDoInimigo, SegundoLocalDeDisparo.position, rotacaoDoTiro);
+
             tempoAtualDosLasers = tempoMaximoEntreOsLasers;
         }
     }
@@ -66,22 +68,14 @@ public class Inimigos : MonoBehaviour
     {
         VidaAtualDoInimigo -= danoParaReceber;
 
-        if(VidaAtualDoInimigo <= 0)
+        if (VidaAtualDoInimigo <= 0)
         {
             GameManeger.instance.AumentarSaber(SaberParaDar);
 
-            int numeroAleatorio = Random.Range(0, 100);
-            
-            if(numeroAleatorio <= chanceParaDropar)
-            {
-                Instantiate(ItemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
-            }
-           
-            
-            Destroy(this.gameObject);
+            if (Random.Range(0, 100) <= chanceParaDropar)
+                Instantiate(ItemParaDropar, transform.position, Quaternion.identity);
+
+            Destroy(gameObject);
         }
     }
-
-
-
 }
